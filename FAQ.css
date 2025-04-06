@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+:root {
+  --m: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: black;
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  color: #d5d5d5;
+  font-size: calc(0.3 * var(--m));
+  min-height: 100vh;
+
+  overflow-x: hidden;   /* hides horizontal scrollbar */
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: var(--m);
+  margin: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: calc(0.6 * var(--m));
+  margin: 0;
+}
+
+.header{
+  width: 100%;
+  height: 400px;
+  background-color: #010006;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.inner_header{
+   width: 1000px;
+   height: 100%;
+   display: block;
+   margin: 0 auto;
+   background-color: transparent;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 90px;
+}
+
+
+.logo_container{
+   height: 100%;
+   display: table;
+   margin: 0 auto;
+   
+}
+.logo_container h1{
+   color: rgb(255,250,240);
+   font-family: "Whisper", cursive;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+   align-items: center;
+   font-size: 70px;
+}
+.logo_container p{
+   max-width: 500px;
+   margin: 5px auto;
+   line-height: 18px;
+   font-size: 16px;
+   color: rgb(255,250,240);
+}
+.logo_container img{
+   width: 200px;
+   height: 170px;
+   object-fit: fill;
+}
+
+
+.menu_navbar{
+  background: transparent;
+  text-align: center;
+}
+.menu_navbar ul{
+  display: inline-flex;
+  list-style: none;
+  text-align: center;
+}
+.menu_navbar a{
+  transition: color .6s ease;
+}
+.menu_navbar ul :hover a{
+  color: aqua;
+}
+.menu_navbar ul li {
+  width: 120px;
+  margin: 18px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.menu_navbar ul li a{
+  text-decoration: none;
+  color: rgb(255,250,240);
+}
+.menu_navbar ul li:hover{
+  background: transparent;
+}
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+} 
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFA62F;
+  -webkit-transition: .4s;
+  transition: .4s;
+} 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #5AB2FF;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(45px);
+}
+
+.slider {
+  border-radius: 34px;
+}
+.slider:before {
+  border-radius: 50%;
+}
+
+.on {
+  display: none;
+}  
+.on,.off {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+.slider .on {
+  display: block;
+}
+input:checked+.slider .off {
+  display: none;
+}
+
+.FAQ{
+  margin-top: 30px;
+}
+.FAQ p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.FAQ h1{
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  color: #FFA62F;
+  margin: 25px;
+}
+
+.last-img {
+  position: sticky;
+  top: 125px;
+  width: 100vw; /* Full viewport width */
+  overflow: hidden;
+}
+
+.last-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space in some browsers */
+}
+
+
+
+.button-container {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the button itself */
+.button {
+  list-style: none;
+  padding: 10px 20px;
+  background: #5ab2ffba;
+  border: none;
+  border-radius: 55px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+/* Styling for the link inside the button */
+.button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Simple, clean font */
+  text-transform: uppercase; /* Uppercase text */
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+
+
+footer {
+  z-index: 500;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 5rem 2vw;
+  position: relative;
+  margin-top: auto; /* Push footer to the bottom of the page */
+}
+footer h3{
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 3rem;
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.socials a{
+  text-decoration: none;
+  color: rgb(255,204,51);
+}
+.socials a i{
+  font-size: 2.5rem;
+  transition: color .4s ease;
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.3) 20%,
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 1) 50%,
+    rgb(0, 0, 0)
+  );
+  z-index: -7;
+}
+
+.backdrop {
+  z-index: -5;
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  mask-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgb(0, 0, 0)
+  );
+
+  -webkit-mask-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgb(0, 0, 0)
+  );
+}
+
+.col {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+  width: 50%;
+}
+
+.col2 {
+  background-color:rgba(255, 255, 255, 0.1);
+  border-radius: calc(0.5 * var(--m));
+  width: 30%;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 9rem 1vw;
+  }
+  .col {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+background: linear-gradient(transparent,aqua,transparent);
+border-radius: 6px;
+}
