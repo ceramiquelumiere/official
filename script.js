@@ -24,10 +24,10 @@ document.querySelector('#togBtn').addEventListener('change', e => {
       "para-05": "I wish to thank and pay tribute to my late thesis advisor, Professor Ricardo Licata, a remarkable teacher who was attentive to his students and appreciated by all."
     },
     "francais": {
-      "title": "Bienvenu!",
+      "title": "Bienvenue!",
       "para-01": "Mon travail, principalement s’inspire de la nature :en effet, elle est tellement riche en couleurs, en formes ,en capacités d’adaptation qu’elle offre une source infinie de possibilités créatrices. J’aime l’idée de raconter et partager une belle histoire : celle de mon émerveillement face à cette nature, sa beauté, son ingéniosité.",
       "para-02": "Chaque création est unique, chaque élément façonné à la main. Il n’y a pas de répétition mécanique de forme comme le moulage. Même si mes sculptures se rapprochent souvent visuellement de la réalité, Je ne cherche pas la perfection photographique, mais l’émotion.",
-      "para-03": "La porcelaine blanche que j’utilise est d’une grande  qualité et finesse. la lumière passe à travers les parties les plus fines des sculptures. Certaines réalisations restent blanches, ce qui ne représente pas forcément une absence de couleurs car toutes les nuances de transparence font vibrer cette matière. Parfois L’absence de couleur laisse place à l’imagination, car la couleur est une interprétation. Cependant, une autre partie de mes pièces sont colorées, et d’autres sont blanches et or.",
+      "para-03": "La porcelaine blanche que j’utilise est d’une grande  qualité et finesse. la lumière passe à travers les parties les plus fines des sculptures. Certaines réalisations restent blanches, ce qui ne représente pas forcément une absence de couleur car toutes les nuances de transparence font vibrer cette matière. Parfois L’absence de couleur laisse place à l’imagination, car la couleur est une interprétation. Cependant, une autre partie de mes pièces sont colorées, et d’autres sont blanches et or.",
       "para-04": "J’ai étudié et suis diplômée de l’l’école nationale supérieure des Beaux-Arts, (ENSBA) à Paris.",
       "para-05": "Je tiens à remercier et rendre hommage à feu mon professeur tuteur de thèse Ricardo Licata, un enseignant remarquable, à l’écoute de ses élèves et apprécié de tous."
     }
